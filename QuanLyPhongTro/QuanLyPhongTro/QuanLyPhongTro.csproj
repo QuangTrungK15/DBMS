@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7127A912-F3A8-4B82-A16A-1C2AE8E0509F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyPhongTro</RootNamespace>
+    <AssemblyName>QuanLyPhongTro</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v15.1" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.PlugInCore, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.UserControls, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Data.v15.1" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Platform, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Printing.v15.1.Core" />
+    <Reference Include="DevExpress.Utils.v15.1" />
+    <Reference Include="DevExpress.XtraBars.v15.1" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v15.1" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB Layer\DBMain.cs" />
+    <Compile Include="DS Layer\BLDichVu.cs" />
+    <Compile Include="DS Layer\BLHoaDon.cs" />
+    <Compile Include="DS Layer\BLKhachHang.cs" />
+    <Compile Include="DS Layer\BLPhieuDangKy.cs" />
+    <Compile Include="DS Layer\BLPhieuThanhToan.cs" />
+    <Compile Include="DS Layer\BLPhongTro.cs" />
+    <Compile Include="DS Layer\BLDangKyDV.cs" />
+    <Compile Include="DS Layer\BLThietBi.cs" />
+    <Compile Include="FmAdMin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAdMin.Designer.cs">
+      <DependentUpon>FmAdMin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDichVu.Designer.cs">
+      <DependentUpon>FmDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmHoaDon.Designer.cs">
+      <DependentUpon>FmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmKhachHang.Designer.cs">
+      <DependentUpon>FmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmPhieuDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmPhieuDangKy.Designer.cs">
+      <DependentUpon>FmPhieuDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmPhieuThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmPhieuThanhToan.Designer.cs">
+      <DependentUpon>FmPhieuThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmPhongTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmPhongTro.Designer.cs">
+      <DependentUpon>FmPhongTro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmDangKyDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDangKyDichVu.Designer.cs">
+      <DependentUpon>FmDangKyDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmThietBi.Designer.cs">
+      <DependentUpon>FmThietBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmTrangBị.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmTrangBị.Designer.cs">
+      <DependentUpon>FmTrangBị.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmAdMin.resx">
+      <DependentUpon>FmAdMin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmDichVu.resx">
+      <DependentUpon>FmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmHoaDon.resx">
+      <DependentUpon>FmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmKhachHang.resx">
+      <DependentUpon>FmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmPhieuDangKy.resx">
+      <DependentUpon>FmPhieuDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmPhieuThanhToan.resx">
+      <DependentUpon>FmPhieuThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmPhongTro.resx">
+      <DependentUpon>FmPhongTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmDangKyDichVu.resx">
+      <DependentUpon>FmDangKyDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmThietBi.resx">
+      <DependentUpon>FmThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmTrangBị.resx">
+      <DependentUpon>FmTrangBị.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custommer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-24-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Maintenance_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
